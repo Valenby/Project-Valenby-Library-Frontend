@@ -105,7 +105,7 @@ export const RegisterPage = () => {
             >
                 <img src={libro} alt="Imagen" style={{ width: '100%', height: '57%' }} />
                 
-                <Typography variant="body1" mt={7}>
+                <Typography variant="body1" mt={7} textAlign='center'>
                     El mundo que hemos creado es un proceso de nuestro pensamiento. No se puede cambiar sin nuestra forma de pensar.          
                 </Typography> 
 
