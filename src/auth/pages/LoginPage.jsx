@@ -1,8 +1,11 @@
 import {Link as RouterLink} from 'react-router-dom';
+
 import { Box, Button, Grid, Link, TextField, Typography } from "@mui/material"
-import libro from '../../img/libro.png'
-import { AuthLayout } from '../layout/AuthLayout';
 import { AutoStories } from '@mui/icons-material';
+
+import { AuthLayout } from '../layout/AuthLayout';
+
+import libro from '../../img/libro.png'
 
 const buttonSesion = {
   borderRadius: '20px',
