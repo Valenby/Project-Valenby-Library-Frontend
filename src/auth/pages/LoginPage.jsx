@@ -39,7 +39,7 @@ export const LoginPage = () => {
   <AuthLayout>
 
     {/* Caja del formulario de login */}
-    <Grid item xs={12} sm={6} md={4} className="box-shadow">
+    <Grid item xs={12} sm={6} md={4} lg={4} className="box-shadow">
       <Box p={4} bgcolor='white'  sx={{ height: '560px'}} >
 
       <Grid
@@ -48,7 +48,7 @@ export const LoginPage = () => {
         alignItems="center"
         justifyContent="center"
         >
-            <img src={titulo} alt="titulo" style={{ width: '80%', height: '10%' }} />
+            <img src={titulo} alt="titulo" style={{ width: '80%' }} />
            
           <Typography mt={5} variant="h6" fontFamily='revert-layer'> Inicio de sesión </Typography>
         </Grid>
@@ -111,7 +111,7 @@ export const LoginPage = () => {
     </Grid>
 
     {/* Caja de la imagen */}
-    <Grid item  xs={12} sm={6} md={4} className="box-shadow">
+    <Grid item  xs={12} sm={6} md={4} lg={4} className="box-shadow">
             <Box
               p={4} 
               bgcolor='#D09CFA'  
