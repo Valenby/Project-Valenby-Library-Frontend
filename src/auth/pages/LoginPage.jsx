@@ -1,11 +1,10 @@
 import {Link as RouterLink} from 'react-router-dom';
 
-import { Box, Button, Grid, Link, TextField, Typography } from "@mui/material"
-import { AutoStories } from '@mui/icons-material';
+import { Box, Button, Grid, Link, TextField, Typography } from "@mui/material";
 
 import { AuthLayout } from '../layout/AuthLayout';
-
-import libro from '../../img/libro.png'
+import libro from '../../img/libro2.png'
+import titulo from '../../img/titulo.png';
 
 const buttonSesion = {
   borderRadius: '20px',
@@ -33,7 +32,9 @@ const buttonRegister = {
   },
 };
 
+
 export const LoginPage = () => {
+
   return (
   <AuthLayout>
 
@@ -47,18 +48,18 @@ export const LoginPage = () => {
         alignItems="center"
         justifyContent="center"
         >
-          <Typography margin={1}  variant="h5" >
-            ValenbyLibrary  <AutoStories/> 
-            </Typography>
+            <img src={titulo} alt="titulo" style={{ width: '80%', height: '10%' }} />
            
-          <Typography mt={4} variant="h6">Inicio de sesión </Typography>
+          <Typography mt={5} variant="h6" fontFamily='revert-layer'> Inicio de sesión </Typography>
         </Grid>
          
 
-        <form >
-        <Grid container mt={4}>
+        <form  >
+        <Grid container mt={3}>
             <Grid item xs={12}>
               <TextField
+              color="primary" 
+              variant="filled"
               label='Email'
               type="email"
               placeholder="Ingresa tu email" 
@@ -68,6 +69,8 @@ export const LoginPage = () => {
             </Grid>
             <Grid item xs={12} sx={{ mt: 2}}>
               <TextField
+              color="primary" 
+              variant="filled"
               label='Contraseña'
               type="password"
               placeholder="Ingresa tu contraseña"
@@ -107,8 +110,6 @@ export const LoginPage = () => {
       </Box>
     </Grid>
 
-
-
     {/* Caja de la imagen */}
     <Grid item  xs={12} sm={6} md={4} className="box-shadow">
             <Box
@@ -118,15 +119,13 @@ export const LoginPage = () => {
             >
                 <img src={libro} alt="Imagen" style={{ width: '100%', height: '57%' }} />
                 
-                <Typography variant="body1" mt={7} textAlign='center'>
+                <Typography variant="body1" mt={6} textAlign='center' fontFamily='revert-layer' lineHeight={2}>
                     El mundo que hemos creado es un proceso de nuestro pensamiento. No se puede cambiar sin nuestra forma de pensar.          
                 </Typography> 
 
             </Box>
     </Grid>
-
   </AuthLayout>
- 
-   
+  
   )
 }
